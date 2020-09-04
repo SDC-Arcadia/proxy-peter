@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3006;
+const PORT = process.env.PORT || 80;
 
 //middleware to redirect requests to root to productId of P001
 app.use((req, res, next) => {
