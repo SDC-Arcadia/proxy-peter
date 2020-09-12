@@ -6,13 +6,16 @@
   <body>
     <h1>Proxy Server</h1>
     <div>
-      <div id="Photos"></div>
+      <div style="display: flex;">
+        <div id="Photos" ></div>
+        <div id="zoom-portal-root"></div>
+        </div>
       <div id="product_detail"></div>
     </div>
     <div id="portal-root"></div>
     <div id="reviews"></div>
     <script type="module" src="http://ec2-13-57-207-233.us-west-1.compute.amazonaws.com:3004/photos.prod-bundle.js"></script>
     <script type="module" src="http://ec2-204-236-154-81.us-west-1.compute.amazonaws.com:3007/reviews.prod-bundle.js"></script>
-    <script type="module" src="./bundle.js"></script>
+    <script type="module" src=“http://3.218.98.72:3011/product-detail.prod-bundle.js”></script>
   </body>
 </html>
