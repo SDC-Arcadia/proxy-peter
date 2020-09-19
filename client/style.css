@@ -1,3 +1,8 @@
+
+main {
+  position: relative;
+}
+
 nav {
 
   background-color: #128CED;
@@ -33,7 +38,7 @@ nav {
   display: flex;
   align-items: flex-end;
   height: 75px;
-  margin-left: 100px;
+  margin-left: 150px;
 }
 
 .logo {
@@ -146,8 +151,10 @@ margin-left: auto;
 }
 
 .container {
-  margin-top: 100px;
   box-sizing: border-box;
+  padding-top: 100px;
+  padding-left: 25px;
+  position: relative;
 }
 
 #search-input {
@@ -165,6 +172,15 @@ margin-left: auto;
   border: 0;
   color: #333;
   box-shadow: none;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #128ced;
+  color: #fff;
+  height: 105px;
+  position: relative;
+    /* margin-top: 190%; */
 }
 
 
