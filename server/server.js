@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 80;
+// const PORT = 3999;
 
 //middleware to redirect requests to root to productId of P001
 app.use((req, res, next) => {
-  console.log(req.url);
   if (req.url === '/') {
     res.redirect(301, req.url + '?productId=P001');
   }
