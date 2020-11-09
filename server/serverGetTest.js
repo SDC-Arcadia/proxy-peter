@@ -8,7 +8,7 @@ const serverUrl = 'http://127.0.0.1:3000';
 const errorRate = new Rate('errorRate');
 
 export const options = {
-  duration: '10s',
+  duration: '100s',
   vus: 50,
 };
 
