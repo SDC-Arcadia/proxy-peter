@@ -8,7 +8,7 @@ const serverUrl = 'http://127.0.0.1:3000';
 const errorRate = new Rate('errorRate');
 
 export const options = {
-  duration: '1s',
+  duration: '10s',
   vus: 50,
 };
 
@@ -21,7 +21,7 @@ export default function runGetRequestTest() {
 
   check(response, {
     'Response code was 200': (res) => {
-      console.log('Response status', res.status);
+      // console.log('Response status', res.status);
       return res.status === 200;
     },
     'Product Id exists': (res) => {

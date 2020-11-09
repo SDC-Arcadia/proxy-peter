@@ -1,5 +1,5 @@
+// const newrelic = require('newrelic');
 const proxy = require('express-http-proxy');
-const newrelic = require('newrelic');
 const express = require('express');
 const path = require('path');
 require('dotenv').config();
@@ -23,7 +23,7 @@ app.use('/photos', proxy(imageModule, {
     const productId = parts[1];
     const pictureId = parts[2];
 
-    console.log(parts);
+    // console.log(parts);
 
     if (productId === undefined || productId === 0) {
       return `${imageModule}/photos/1`;
